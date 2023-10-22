@@ -1,0 +1,11 @@
+*{
+    background-color: rgb(235, 235, 236);
+}
+.card img{
+    width:60px;
+    height:60px;
+}
+.card-img-top img{
+    width:90%;
+    height:90%;
+}
