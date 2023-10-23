@@ -8,7 +8,7 @@ import Pricing from './Components/Pricing';
 import FAQs from './Components/FAQs';
 import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
-import Error from './Components/Error';
+
 import {BrowserRouter as Main, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -18,13 +18,13 @@ function App() {
     <Navbar title="MARTEX" aboutText="About"/>
     <Routes>
   
-      <Route path='/features' element={<Features />} />
-      <Route path='/pages' element={<Pages />} />
-      <Route path='/pricing' element={<Pricing />} />
-      <Route path='/FAQs' element={<FAQs />} />
-      <Route path='/signin' element={<SignIn />} />
-      <Route path='/signup' element={<SignUp />} />
-      <Route path='/*' element={<Error />} />
+      <Route exact path='/features' element={<Features />} />
+      <Route exact path='/pages' element={<Pages />} />
+      <Route exact path='/pricing' element={<Pricing />} />
+      <Route exact path='/FAQs' element={<FAQs />} />
+      <Route exact path='/signin' element={<SignIn />} />
+      <Route exact path='/signup' element={<SignUp />} />
+      
     </Routes>
     </Main>
     </>
